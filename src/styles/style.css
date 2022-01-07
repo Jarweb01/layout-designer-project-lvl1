@@ -50,14 +50,19 @@ h2 {
 h3 {
   font-size: 34px;
 }
+section {
+  padding: 100px 0;
+}
 .container {
   max-width: 1110px;
   margin: 0 auto;
   text-align: center;
-  padding: 100px 0;
 }
 .dark {
   color: var(--dark);
+}
+.footer {
+  padding: 100px 0;
 }
 
 /* header styles */
@@ -65,6 +70,7 @@ h3 {
   position: relative;
   background-color: var(--light);
   min-height: 100vh;
+  padding: 100px 0;
 }
 .header::before {
   position: absolute;
@@ -113,4 +119,19 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+/* definition section */
+.definition {
+  margin-bottom: -200px;
+}
+.definition__title {
+  color: var(--main);
+  margin-bottom: 27px;
+}
+.definition__subtitle {
+  margin-bottom: 30px;
+}
+.definition__video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
