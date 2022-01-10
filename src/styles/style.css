@@ -129,6 +129,13 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
+  z-index: 0;
+  transition: all .4s;
+}
+
+.header__link:hover {
+  background-color: #EA7600;
 }
 
 /* definition section */
@@ -164,6 +171,16 @@ section {
   padding: 24px;
   text-align: left;
   background: var(--light);
+  transition: all .4s;
+}
+
+a.examplesItem:hover {
+  background: var(--main);
+  color: var(--white);
+}
+
+a.examplesItem:hover .examplesItem__title {
+  color: var(--white);
 }
 
 .examplesItem--first {
@@ -191,6 +208,7 @@ section {
   line-height: 1.2;
   font-family: 'Neucha', cursive;
   color: var(--main);
+  transition: all .4s;
 }
 
 .effectSection {
@@ -250,6 +268,7 @@ section {
 }
 
 .effectSectionBottom__title {
+  position: relative;
   padding: 5px 10px;
   background: var(--brown);
   color: var(--white);
