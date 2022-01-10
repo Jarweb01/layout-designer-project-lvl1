@@ -1,47 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Когнитивные искажения Jarweb01</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <h1 class="header__title">Когнитивные<br> искажения<br><span class="dark">в программировании</span></h1>
-      <img class="header__img" src="img/main.png" alt="main image" >
-      <div class="header__text">
-        <p>Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы часто игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с ними можно как-то справиться, а иногда, к сожалению, нет.</p>
-        <div class="nobreak">
-          <p>Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
-          <p>Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">
+          Когнитивные<br />
+          искажения<br /><span class="dark">в программировании</span>
+        </h1>
+        <img class="header__img" src="img/main.png" alt="main image" />
+        <div class="header__text">
+          <p>
+            Мы, разработчики, часто сталкиваемся с проблемами, которые идут
+            вразрез с нашей продуктивностью. Но мы часто игнорируем целостную
+            картину. Некоторые из этих проблем малозаметны, некоторые
+            существенны. Иногда с ними можно как-то справиться, а иногда, к
+            сожалению, нет.
+          </p>
+          <div class="nobreak">
+            <p>
+              Вместе они формируют что-то вроде замкнутого цикла, и это может
+              привести к длительной потере продуктивности, багам и бесконечному
+              разочарованию.
+            </p>
+            <p>
+              Если мы сможем минимизировать воздействие одного или нескольких из
+              этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.
+            </p>
+          </div>
         </div>
+        <a class="header__link" href="#examples">подробнее</a>
       </div>
-      <a class="header__link" href="#examples">подробнее</a>
-    </div>
-  </header>
-  <main class="main">
-    <div class="container">
+    </header>
+    <main class="main">
       <section class="definition">
-        <h2 class="definition__title"><span class="dark">Что же это такое,<br></span>когнитивные искажения?</h2>
-        <p class="definition__subtitle">Что такое когнитивные искажения. Petrovna Channel</p>
-        <div class="definition__video">
-          <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
+        <div class="container">
+          <h2 class="definition__title">
+            <span class="dark">Что же это такое,<br /></span>когнитивные
+            искажения?
+          </h2>
+          <p class="definition__subtitle">
+            Что такое когнитивные искажения. Petrovna Channel
+          </p>
+          <div class="definition__video">
+            <iframe
+              class="video"
+              width="919"
+              height="569"
+              src="https://www.youtube.com/embed/jie9AizBqss"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </section>
-      <section style="width: 100%;height: 500px;background-color: red;">
-      <p>test</p></section>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="container">
-
-    </div>
-  </footer>
-</body>
+      <section class="examples" id="navigation">
+        <div class="container">
+          <div class="examples__box examplesBox">
+            <div class="examplesBox__item examplesItem examplesItem--first">
+              <h2 class="examplesItem__heading">
+                <span class="orange">5 когнитивных искажений</span>о
+                существовании которых стоит помнить
+              </h2>
+            </div>
+            <a class="examplesBox__item examplesItem" href="#ikea-effect">
+              <div class="examplesItem__num">1</div>
+              <div class="examplesItem__title">Эффект ИКЕА</div>
+              <div class="examplesItem__desc">
+                Вы переоцениваете собственные решения, и, как следствие,
+                недооцениваете решения других.
+              </div>
+            </a>
+            <a class="examplesBox__item examplesItem" href="#">
+              <div class="examplesItem__num">2</div>
+              <div class="examplesItem__title">Преждевременная оптимизация</div>
+              <div class="examplesItem__desc">
+                Вы оптимизируете что-то задолго до того, как в этом появляется
+                необходимость.
+              </div>
+            </a>
+            <a class="examplesBox__item examplesItem" href="#">
+              <div class="examplesItem__num">3</div>
+              <div class="examplesItem__title">Искажение новизны</div>
+              <div class="examplesItem__desc">
+                Вы даёте более высокую оценку тем событиям, которые произошли
+                недавно, и недооцениваете более старые.
+              </div>
+            </a>
+            <a class="examplesBox__item examplesItem" href="#">
+              <div class="examplesItem__num">4</div>
+              <div class="examplesItem__title">
+                Гиперболическое обесценивание
+              </div>
+              <div class="examplesItem__desc">
+                Вы гонитесь за немедленной маленькой выгодой и игнорируете более
+                крупную, недоступную сейчас, но доступную в будущем.
+              </div>
+            </a>
+            <a class="examplesBox__item examplesItem" href="#">
+              <div class="examplesItem__num">5</div>
+              <div class="examplesItem__title">Ошибка планирования</div>
+              <div class="examplesItem__desc">
+                Неправильно рассчитывать время необходимое для завершения
+                задачи.
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="ikea" id="ikea-effect">
+        <div class="container">
+          <div class="ikea__top ikeaTop">
+            <img src="" alt="" class="ikeaTop__img" />
+            <div class="ikeaTop__content">
+              <div class="ikeaTop__title">Когнитивные искажения</div>
+              <h2 class="ikeaTop__subtitle">Эффект ИКЕА</h2>
+              <div class="ikeaTop__text">
+                Вы переоцениваете собственные решения, и, как следствие,
+                недооцениваете решения других.
+              </div>
+            </div>
+          </div>
+          <div class="ikea__bottom ikeaBottom">
+            <h4 class="ikeaBottom__title">Как проявляется</h4>
+            <div class="ikeaBottom__text">
+              <p>
+                Когнитивное искажение называется так из-за того, что потребители
+                зачастую предпочитают покупать товары, которые они могут собрать
+                сами, а не уже собранные кем-то.
+              </p>
+              <p>
+                Мы склонны переоцнивать наши собственные решения и недооценивать
+                решения других. Если вы когда-то работали в компании, которая
+                использовала тупой внутренний инструмент вместо более удобного
+                готового решения, вы понимаете, о чём я говорю.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+  </body>
 </html>
