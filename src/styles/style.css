@@ -148,7 +148,7 @@ section {
 }
 .definition__title {
   color: var(--main);
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 .definition__subtitle {
   margin-bottom: 30px;
@@ -395,7 +395,7 @@ a.examplesItem:hover .examplesItem__title {
   position: absolute;
   width: 24px;
   height: 24px;
-  content: url('../img/send.svg');
+  content: url("../img/send.svg");
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
