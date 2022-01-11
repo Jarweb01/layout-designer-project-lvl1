@@ -331,3 +331,87 @@ a.examplesItem:hover .examplesItem__title {
 #premature-optimization h6 {
   color: var(--main);
 }
+
+.footerTop {
+  background-color: var(--main-dark);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 55px;
+  margin-bottom: 76px;
+}
+
+.footerTop__titleBlock {
+  text-align: left;
+  max-width: 400px;
+}
+
+.footerTopContent {
+  text-align: left;
+  width: 50%;
+}
+
+.footerTopContent__title {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.footerTopContent__form {
+  width: 100%;
+  display: flex;
+}
+
+.footerTopContent__input {
+  display: block;
+  flex-grow: 1;
+  border: none;
+  height: 50px;
+  padding: 17px 15px;
+}
+
+.footerTopContent__input::placeholder {
+  color: #757575;
+  opacity: 0.2;
+}
+
+.footerTopContent__btn {
+  display: block;
+  border: none;
+  width: 70px;
+  height: 50px;
+  background: var(--main);
+  cursor: pointer;
+  position: relative;
+}
+
+.footerTopContent__btn::after {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  content: url('../img/send.svg');
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footerTopContent__subtitle {
+  font-size: 12px;
+}
+
+.footerTopContent__subtitle a {
+  text-decoration: underline;
+}
+
+.footerBottom__copy {
+  margin-bottom: 16px;
+}
+
+.footerBottom p {
+  margin-bottom: 16px;
+}
+
+.footerBottom a {
+  text-decoration: underline;
+  color: var(--blue);
+}
