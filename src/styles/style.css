@@ -58,6 +58,8 @@ h3 {
 }
 section {
   padding: 100px 0;
+  max-width: 1440px;
+  overflow-x: clip;
 }
 .container {
   max-width: 1110px;
@@ -276,6 +278,7 @@ a.examplesItem:hover .examplesItem__title {
 }
 
 .effectSectionBottom__title {
+  font-size: 14px;
   position: relative;
   padding: 5px 10px;
   font-weight: 700;
