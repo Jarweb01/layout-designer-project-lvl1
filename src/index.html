@@ -15,12 +15,12 @@
   </head>
   <body>
     <header class="header">
+      <img class="header__img" src="img/main.png" alt="main image" />
       <div class="container">
         <h1 class="header__title">
           Когнитивные<br />
           искажения<br /><span class="dark">в программировании</span>
         </h1>
-        <img class="header__img" src="img/main.png" alt="main image" />
         <div class="header__text">
           <p>
             Мы, разработчики, часто сталкиваемся с проблемами, которые идут
@@ -83,7 +83,7 @@
                 недооцениваете решения других.
               </div>
             </a>
-            <a class="examplesBox__item examplesItem" href="#">
+            <a class="examplesBox__item examplesItem" href="#premature-optimization">
               <div class="examplesItem__num">2</div>
               <div class="examplesItem__title">Преждевременная оптимизация</div>
               <div class="examplesItem__desc">
@@ -123,7 +123,11 @@
       <section class="effectSection" id="ikea-effect">
         <div class="container">
           <div class="effectSection__top effectSectionTop">
-            <img class="effectSectionTop__img" src="img/ikea.jpg" alt="effect img"/>
+            <img
+              class="effectSectionTop__img"
+              src="img/ikea.jpg"
+              alt="effect img"
+            />
             <div class="effectSectionTop__content">
               <div class="effectSectionTop__heading">Когнитивные искажения</div>
               <h2 class="effectSectionTop__title">Эффект ИКЕА</h2>
@@ -150,6 +154,43 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="effectSection effectSection--even" id="premature-optimization">
+        <div class="container">
+          <div class="effectSection__top effectSectionTop">
+            <img
+              class="effectSectionTop__img"
+              src="img/optimization.jpg"
+              alt="effect img"
+            />
+            <div class="effectSectionTop__content">
+              <div class="effectSectionTop__heading">Когнитивные искажения</div>
+              <h2 class="effectSectionTop__title">
+                Преждевременная оптимизация
+              </h2>
+              <div class="effectSectionTop__text">
+                Вы оптимизируете что-то задолго до того, как в этом появляется
+                необходимость.
+              </div>
+            </div>
+          </div>
+          <div class="effectSection__bottom effectSectionBottom">
+            <h4 class="effectSectionBottom__title">Как проявляется</h4>
+            <div class="effectSectionBottom__text">
+              <p>
+                Если вы добавите аэродинамический спойлер к своему старому
+                автомобилю вместо ремонта мотора, то автомобиль не станет
+                быстрее.
+              </p>
+              <p>
+                Отличный пример: писать максимально подтюненный и
+                высокопроизводительный код для всего лишь экспериментального
+                проекта.
+              </p>
+            </div>
+          </div>
+        </div>
+        
       </section>
     </main>
     <footer class="footer">

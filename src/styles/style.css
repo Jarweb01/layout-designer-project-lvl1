@@ -1,6 +1,6 @@
 /** CSS STYLE **/
 /* general styles */
-*,
+*:not(ul),
 *::before,
 *::after {
   box-sizing: border-box;
@@ -8,9 +8,7 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-ul {
-  list-style-type: none;
-}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -28,7 +26,7 @@ a {
   --blue: #1085c5;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   color: var(--dark);
@@ -39,8 +37,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
   line-height: 1.2em;
+  font-weight: 400;
 }
 h1 {
   font-size: 72px;
@@ -58,6 +57,8 @@ section {
   max-width: 1110px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .dark {
   color: var(--dark);
@@ -66,9 +67,6 @@ section {
   display: block;
   color: var(--main);
 }
-
-
-
 
 .footer {
   padding: 100px 0;
@@ -83,11 +81,11 @@ section {
 }
 .header::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
-  background-image: url('../img/background.png');
+  background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -131,11 +129,11 @@ section {
   cursor: pointer;
   position: relative;
   z-index: 0;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .header__link:hover {
-  background-color: #EA7600;
+  background-color: #ea7600;
 }
 
 /* definition section */
@@ -171,7 +169,7 @@ section {
   padding: 24px;
   text-align: left;
   background: var(--light);
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 a.examplesItem:hover {
@@ -198,7 +196,7 @@ a.examplesItem:hover .examplesItem__title {
 .examplesItem__num {
   margin-bottom: 40px;
   font-size: 64px;
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
   line-height: 1;
 }
 
@@ -206,9 +204,9 @@ a.examplesItem:hover .examplesItem__title {
   margin-bottom: 16px;
   font-size: 34px;
   line-height: 1.2;
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
   color: var(--main);
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .effectSection {
@@ -218,12 +216,12 @@ a.examplesItem:hover .examplesItem__title {
 
 .effectSection::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  background-image: url('../img/background.png');
+  background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
@@ -247,20 +245,21 @@ a.examplesItem:hover .examplesItem__title {
 .effectSectionTop__heading {
   font-size: 24px;
   line-height: 29px;
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
   color: var(--dark-transparent);
 }
 
 .effectSectionTop__title {
   margin-bottom: 30px;
   font-weight: normal;
+  color: var(--dark);
 }
 
 .effectSectionTop__text {
   font-size: 34px;
   line-height: 41px;
   color: var(--dark);
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
 }
 
 .effectSectionBottom {
@@ -270,11 +269,12 @@ a.examplesItem:hover .examplesItem__title {
 .effectSectionBottom__title {
   position: relative;
   padding: 5px 10px;
+  font-weight: 700;
   background: var(--brown);
   color: var(--white);
   text-transform: uppercase;
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -284,6 +284,50 @@ a.examplesItem:hover .examplesItem__title {
   text-align: left;
 }
 
-.effectSectionBottom__text p {  
+.effectSectionBottom__text p {
   break-inside: avoid;
+}
+
+.effectSection--even {
+  background: var(--brown);
+  color: var(--white);
+}
+
+.effectSection--even .effectSectionTop {
+  flex-direction: row-reverse;
+}
+
+.effectSection--even .effectSectionTop__heading {
+  color: var(--white-transparent);
+}
+
+.effectSection--even .effectSectionTop__title {
+  color: var(--white) !important;
+}
+
+.effectSection--even .effectSectionTop__text {
+  color: var(--white);
+}
+
+.effectSection--even .effectSectionTop__content {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+.effectSection--even .effectSectionBottom__title {
+  background: var(--white);
+  color: var(--brown) !important;
+}
+
+#premature-optimization .container {
+  text-align: left;
+}
+
+#premature-optimization h1,
+#premature-optimization h2,
+#premature-optimization h3,
+#premature-optimization h4,
+#premature-optimization h5,
+#premature-optimization h6 {
+  color: var(--main);
 }
