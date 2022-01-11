@@ -149,7 +149,7 @@ section {
 }
 .definition__title {
   color: var(--main);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .definition__subtitle {
   margin-bottom: 30px;
@@ -171,7 +171,7 @@ section {
 
 .examplesItem {
   display: block;
-  width: 32%;
+  width: 31.6%;
   margin-bottom: 20px;
   padding: 24px;
   text-align: left;
@@ -198,17 +198,19 @@ a.examplesItem:hover .examplesItem__title {
 .examplesItem__heading {
   font-size: 52px;
   font-weight: normal;
+  line-height: 120%;
 }
 
 .examplesItem__num {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  padding-top: 5px;
   font-size: 64px;
   font-family: "Neucha", cursive;
   line-height: 1;
 }
 
 .examplesItem__title {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-size: 34px;
   line-height: 1.2;
   font-family: "Neucha", cursive;
