@@ -17,6 +17,7 @@ a {
 iframe {
   width: 919px;
   height: 569px;
+  border: none;
 }
 
 :root {
