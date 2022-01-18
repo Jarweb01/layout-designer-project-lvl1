@@ -195,11 +195,10 @@ section {
   margin-bottom: 30px;
 }
 
-/* .definition__video {
+.definition__video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
 
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
-  filter: drop-shadow(1px 16px 32px #d9d9d9);
-} */
 .examples {
   padding-top: 200px;
 
@@ -299,7 +298,7 @@ a.examplesItem:hover .examplesItem__title {
 }
 
 .effectSectionTop__img {
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .effectSectionTop__content {
