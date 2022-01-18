@@ -60,9 +60,9 @@ section {
   padding: 100px 0;
 }
 .container {
-  max-width: 1110px;
   position: relative;
   z-index: 1;
+  max-width: 1110px;
   margin: 0 auto;
   text-align: center;
 }
@@ -105,8 +105,8 @@ section {
   text-align: left;
 }
 .header__img {
-  display: block;
   position: absolute;
+  display: block;
   top: 50px;
   right: -100px;
   width: auto;
@@ -130,12 +130,12 @@ section {
   position: relative;
   display: inline-block;
   padding: 12px 24px;
+  z-index: 0;
   color: var(--white);
   background-color: var(--main);
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  z-index: 0;
   transition: all 0.4s;
 }
 
@@ -180,14 +180,14 @@ section {
 }
 
 a.examplesItem:hover {
-  background: var(--main);
   color: var(--white);
+  background: var(--main);
 }
 
 .examplesItem--first {
   padding: 0;
-  text-align: left;
   color: var(--white);
+  text-align: left;
   background: transparent;
 }
 
@@ -252,8 +252,8 @@ a.examplesItem:hover .examplesItem__title {
 }
 
 .effectSectionTop__heading {
-  font-size: 24px;
   color: var(--dark-transparent);
+  font-size: 24px;
   font-family: "Neucha", cursive;
   line-height: 29px;
 }
@@ -278,8 +278,8 @@ a.examplesItem:hover .examplesItem__title {
 .effectSectionBottom__title {
   position: relative;
   padding: 5px 10px;
-  font-size: 14px;
   color: var(--white);
+  font-size: 14px;
   font-weight: 700;
   background: var(--brown);
   margin-bottom: 20px;
@@ -347,9 +347,9 @@ a.examplesItem:hover .examplesItem__title {
   color: var(--white);
   align-items: center;
   justify-content: space-between;
-  background-color: var(--main-dark);
   margin-bottom: 76px;
   padding: 40px 55px;
+  background-color: var(--main-dark);
 }
 
 .footerTop__titleBlock {
@@ -376,8 +376,8 @@ a.examplesItem:hover .examplesItem__title {
   display: block;
   flex-grow: 1;
   height: 50px;
-  border: none;
   padding: 17px 15px;
+  border: none;
 }
 
 .footerTopContent__input::placeholder {
@@ -387,9 +387,9 @@ a.examplesItem:hover .examplesItem__title {
 
 .footerTopContent__btn {
   display: block;
+  position: relative;
   width: 70px;
   height: 50px;
-  position: relative;
   background: var(--main);
   border: none;
   cursor: pointer;
