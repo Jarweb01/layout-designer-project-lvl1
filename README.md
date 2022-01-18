@@ -1,1 +1,1 @@
-https://lying-fight.surge.sh/
+https://outgoing-stamp.surge.sh/
