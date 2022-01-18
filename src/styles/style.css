@@ -85,6 +85,7 @@ section {
 
 .orange {
   display: block;
+
   color: var(--main);
 }
 
@@ -167,6 +168,7 @@ section {
   color: var(--white);
   font-weight: 700;
   text-transform: uppercase;
+
   background-color: var(--main);
 
   cursor: pointer;
@@ -194,7 +196,7 @@ section {
 }
 
 .definition__video {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px #d9d9d9);
 }
 
 .examples {
@@ -224,11 +226,13 @@ section {
 
 a.examplesItem:hover {
   color: var(--white);
+
   background: var(--main);
 }
 
 .examplesItem--first {
   padding: 0;
+
   color: var(--white);
   text-align: left;
 
