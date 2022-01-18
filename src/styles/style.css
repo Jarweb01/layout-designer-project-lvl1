@@ -1,4 +1,5 @@
 /** CSS STYLE **/
+
 /* general styles */
 *:not(ul),
 *::before,
@@ -6,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
   /* scroll-behavior: smooth; */
 }
 
@@ -17,6 +19,7 @@ a {
 iframe {
   width: 919px;
   height: 569px;
+
   border: none;
 }
 
@@ -69,8 +72,10 @@ section {
 .container {
   position: relative;
   z-index: 1;
+
   max-width: 1110px;
   margin: 0 auto;
+
   text-align: center;
 }
 
@@ -90,28 +95,35 @@ section {
 /* header styles */
 .header {
   position: relative;
+
   min-height: 100vh;
   padding: 100px 0;
   overflow-x: clip;
+
   background-color: var(--light);
 }
 
 .header::before {
   position: absolute;
   top: 0;
+
   width: 100%;
   height: 100%;
+
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+
   content: "";
 }
 
 .header__title {
   position: relative;
   z-index: 2;
+
   margin-bottom: 185px;
+
   color: var(--main);
   text-align: left;
 }
@@ -120,6 +132,7 @@ section {
   position: absolute;
   top: 50px;
   right: -100px;
+
   display: block;
   width: auto;
   height: 525px;
@@ -127,28 +140,37 @@ section {
 
 .header__text {
   margin-bottom: 40px;
+
   text-align: left;
   column-count: 2;
   column-gap: 30px;
   column-width: 50%;
 }
+
 .header__text p {
   break-inside: avoid;
+
   margin-bottom: 20px;
 }
+
 .nobreak {
   break-inside: avoid;
 }
+
 .header__link {
   position: relative;
   z-index: 0;
+
   display: inline-block;
   padding: 12px 24px;
+
   color: var(--white);
   font-weight: 700;
   text-transform: uppercase;
-  cursor: pointer;
   background-color: var(--main);
+
+  cursor: pointer;
+
   transition: all 0.4s;
 }
 
@@ -160,13 +182,17 @@ section {
 .definition {
   margin-bottom: -200px;
 }
+
 .definition__title {
   margin-bottom: 30px;
+
   color: var(--main);
 }
+
 .definition__subtitle {
   margin-bottom: 30px;
 }
+
 .definition__video {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -192,6 +218,7 @@ section {
   text-align: left;
 
   background: var(--light);
+
   transition: all 0.4s;
 }
 
@@ -257,6 +284,7 @@ a.examplesItem:hover .examplesItem__title {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+
   content: "";
 }
 
@@ -271,6 +299,7 @@ a.examplesItem:hover .examplesItem__title {
 
 .effectSectionTop__content {
   margin-left: 30px;
+
   text-align: left;
 }
 
@@ -283,6 +312,7 @@ a.examplesItem:hover .examplesItem__title {
 
 .effectSectionTop__title {
   margin-bottom: 30px;
+
   color: var(--dark);
   font-weight: normal;
 }
@@ -300,14 +330,17 @@ a.examplesItem:hover .examplesItem__title {
 
 .effectSectionBottom__title {
   position: relative;
+
   margin-bottom: 20px;
   padding: 5px 10px;
+
   color: var(--white);
   font-weight: 700;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   text-align: left;
   text-transform: uppercase;
+
   background: var(--brown);
 }
 
@@ -323,6 +356,7 @@ a.examplesItem:hover .examplesItem__title {
 
 .effectSection--even {
   color: var(--white);
+
   background: var(--brown);
 }
 
@@ -349,6 +383,7 @@ a.examplesItem:hover .examplesItem__title {
 
 .effectSection--even .effectSectionBottom__title {
   color: var(--brown) !important;
+
   background: var(--white);
 }
 
@@ -371,12 +406,15 @@ a.examplesItem:hover .examplesItem__title {
   justify-content: space-between;
   margin-bottom: 76px;
   padding: 40px 55px;
+
   color: var(--white);
+
   background-color: var(--main-dark);
 }
 
 .footerTop__titleBlock {
   max-width: 400px;
+
   text-align: left;
 }
 
@@ -408,12 +446,13 @@ a.examplesItem:hover .examplesItem__title {
 
 .footerTopContent__input::placeholder {
   color: #757575;
+
   opacity: 0.2;
 }
 
 .footerTopContent__btn {
   position: relative;
-  
+
   display: block;
   width: 70px;
   height: 50px;
