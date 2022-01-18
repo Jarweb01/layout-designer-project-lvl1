@@ -32,10 +32,10 @@ iframe {
   --blue: #1085c5;
 }
 body {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.6em;
+  font-family: "Open Sans", sans-serif;
   color: var(--dark);
+  line-height: 1.6em;
 }
 h1,
 h2,
@@ -44,8 +44,8 @@ h4,
 h5,
 h6 {
   font-family: "Neucha", cursive;
-  line-height: 1.2em;
   font-weight: 400;
+  line-height: 1.2em;
 }
 h1 {
   font-size: 72px;
@@ -62,8 +62,8 @@ section {
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  text-align: center;
   position: relative;
+  text-align: center;
   z-index: 1;
 }
 .dark {
@@ -81,34 +81,34 @@ section {
 /* header styles */
 .header {
   position: relative;
-  background-color: var(--light);
   min-height: 100vh;
   padding: 100px 0;
+  background-color: var(--light);
   overflow-x: clip;
 }
 .header::before {
   position: absolute;
-  content: "";
+  top: 0;
   width: 100%;
   height: 100%;
-  top: 0;
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+  content: "";
 }
 .header__title {
   position: relative;
+  z-index: 2;
   text-align: left;
   color: var(--main);
-  z-index: 2;
   margin-bottom: 185px;
 }
 .header__img {
   display: block;
   width: auto;
-  height: 525px;
   position: absolute;
+  height: 525px;
   top: 50px;
   right: -100px;
 }
@@ -129,8 +129,8 @@ section {
 .header__link {
   display: inline-block;
   padding: 12px 24px;
-  background-color: var(--main);
   color: var(--white);
+  background-color: var(--main);
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
@@ -148,8 +148,8 @@ section {
   margin-bottom: -200px;
 }
 .definition__title {
-  color: var(--main);
   margin-bottom: 30px;
+  color: var(--main);
 }
 .definition__subtitle {
   margin-bottom: 30px;
@@ -159,8 +159,8 @@ section {
 }
 
 .examples {
-  background: var(--main-dark);
   padding-top: 200px;
+  background: var(--main-dark);
 }
 
 .examplesBox {
@@ -190,8 +190,8 @@ a.examplesItem:hover .examplesItem__title {
 
 .examplesItem--first {
   padding: 0;
-  background: transparent;
   text-align: left;
+  background: transparent;
   color: var(--white);
 }
 
@@ -212,9 +212,9 @@ a.examplesItem:hover .examplesItem__title {
 .examplesItem__title {
   margin-bottom: 12px;
   font-size: 34px;
-  line-height: 1.2;
-  font-family: "Neucha", cursive;
   color: var(--main);
+  font-family: "Neucha", cursive;
+  line-height: 1.2;
   transition: all 0.4s;
 }
 
@@ -225,16 +225,16 @@ a.examplesItem:hover .examplesItem__title {
 
 .effectSection::before {
   position: absolute;
-  content: "";
   width: 100%;
-  height: 100%;
-  left: 0;
   top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
   opacity: 0.1;
+  content: "";
 }
 
 .effectSectionTop {
@@ -253,21 +253,21 @@ a.examplesItem:hover .examplesItem__title {
 
 .effectSectionTop__heading {
   font-size: 24px;
-  line-height: 29px;
-  font-family: "Neucha", cursive;
   color: var(--dark-transparent);
+  font-family: "Neucha", cursive;
+  line-height: 29px;
 }
 
 .effectSectionTop__title {
   margin-bottom: 30px;
-  font-weight: normal;
   color: var(--dark);
+  font-weight: normal;
 }
 
 .effectSectionTop__text {
   font-size: 34px;
-  line-height: 41px;
   color: var(--dark);
+  line-height: 41px;
   font-family: "Neucha", cursive;
 }
 
@@ -276,22 +276,22 @@ a.examplesItem:hover .examplesItem__title {
 }
 
 .effectSectionBottom__title {
-  font-size: 14px;
   position: relative;
+  font-size: 14px;
   padding: 5px 10px;
   font-weight: 700;
-  background: var(--brown);
   color: var(--white);
-  text-transform: uppercase;
-  text-align: left;
-  font-family: "Open Sans", sans-serif;
+  background: var(--brown);
   margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .effectSectionBottom__text {
   columns: 2;
-  column-gap: 30px;
   text-align: left;
+  column-gap: 30px;
 }
 
 .effectSectionBottom__text p {
@@ -299,8 +299,8 @@ a.examplesItem:hover .examplesItem__title {
 }
 
 .effectSection--even {
-  background: var(--brown);
   color: var(--white);
+  background: var(--brown);
 }
 
 .effectSection--even .effectSectionTop {
@@ -320,13 +320,13 @@ a.examplesItem:hover .examplesItem__title {
 }
 
 .effectSection--even .effectSectionTop__content {
-  margin-left: 0;
   margin-right: 30px;
+  margin-left: 0;
 }
 
 .effectSection--even .effectSectionBottom__title {
-  background: var(--white);
   color: var(--brown) !important;
+  background: var(--white);
 }
 
 #premature-optimization .container {
@@ -343,33 +343,33 @@ a.examplesItem:hover .examplesItem__title {
 }
 
 .footerTop {
-  background-color: var(--main-dark);
-  color: var(--white);
   display: flex;
-  justify-content: space-between;
+  color: var(--white);
+  background-color: var(--main-dark);
   align-items: center;
-  padding: 40px 55px;
+  justify-content: space-between;
   margin-bottom: 76px;
+  padding: 40px 55px;
 }
 
 .footerTop__titleBlock {
-  text-align: left;
   max-width: 400px;
+  text-align: left;
 }
 
 .footerTopContent {
-  text-align: left;
   width: 50%;
+  text-align: left;
 }
 
 .footerTopContent__title {
-  font-size: 18px;
   margin-bottom: 9px;
+  font-size: 18px;
 }
 
 .footerTopContent__form {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 .footerTopContent__input {
@@ -387,21 +387,22 @@ a.examplesItem:hover .examplesItem__title {
 
 .footerTopContent__btn {
   display: block;
-  border: none;
   width: 70px;
   height: 50px;
+  border: none;
   background: var(--main);
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
 }
 
 .footerTopContent__btn::after {
   position: absolute;
   width: 24px;
   height: 24px;
-  content: url("../img/send.svg");
   top: 50%;
   left: 50%;
+  content: url("../img/send.svg");
+
   transform: translate(-50%, -50%);
 }
 
@@ -422,6 +423,6 @@ a.examplesItem:hover .examplesItem__title {
 }
 
 .footerBottom a {
-  text-decoration: underline;
   color: var(--blue);
+  text-decoration: underline;
 }
